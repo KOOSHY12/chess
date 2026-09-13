@@ -4,6 +4,15 @@
 */
 @font-face {font-family:lgaf;src:url(./font.ttf);}
 * {margin:0;-webkit-user-drag:none;user-select:none;font-family:lgaf;}
+body {width:360px;min-height:260px;background:#161616;color:#fff;padding:12px;box-sizing:border-box;}
+.engine-settings {display:flex;flex-direction:column;gap:12px;padding:8px;}
+.engine-settings h1 {font-size:16px;margin:0 0 4px;color:#f8e8d8;text-align:center;}
+.setting-row {display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.setting-row label {font-size:12px;color:#ddd;}
+.setting-row input[type='number'] {width:110px;background:#222;color:#fff;border:1px solid #a22;padding:6px;border-radius:4px;}
+.setting-row button {width:100%;padding:8px 12px;background:#712723;color:#fff;border-radius:4px;border:1px solid #d9a647;cursor:pointer;}
+.setting-row button:hover{background:#8a2b24;}
+.status-message {font-size:11px;color:#d8dfd8;text-align:center;min-height:16px;}
 button:hover{animation:move 0.5;animation-iteration-count:1;}
 #lgb div {filter:brightness(1);position:relative;left:-2px;display:inline-block;color:#fff;animation:bump 1.5s infinite ease-in-out;animation-delay:calc(.1s*var(--i));}
 #caf {animation:spin 5s infinite linear;}

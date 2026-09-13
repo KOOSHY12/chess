@@ -6,6 +6,23 @@
 		<meta name="theme-color" content="#712723">
 		<link rel="stylesheet" href="./ain.css">
 		<script src="./upo.js" defer></script>
+		<script src="./settings.js" defer></script>
 	</head>
-	<body></body>
+	<body>
+		<div class="engine-settings">
+			<h1>Chess Assist Engine Settings</h1>
+			<div class="setting-row">
+				<label for="engineDepth">Depth (5-100)</label>
+				<input id="engineDepth" type="number" min="5" max="100" value="12">
+			</div>
+			<div class="setting-row">
+				<label for="engineSeconds">Seconds per move</label>
+				<input id="engineSeconds" type="number" min="1" max="60" value="2">
+			</div>
+			<div class="setting-row">
+				<button id="saveSettings">Save Settings</button>
+			</div>
+			<div id="statusMessage" class="status-message"></div>
+		</div>
+	</body>
 </html>
