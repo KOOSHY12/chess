@@ -8,6 +8,7 @@
     "stockfish": "^18.0.8"
   },
   "scripts": {
+    "test": "node test/test_engine_settings.js",
     "test:stockfish": "node stockfish_bridge.js"
   }
 }
