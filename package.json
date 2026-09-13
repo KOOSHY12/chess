@@ -1,0 +1,13 @@
+{
+  "name": "chess-assist-strength-upgrade",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Upgrade path for the Chess Assist workspace that uses Stockfish.js 18 instead of the older bundled engine.",
+  "main": "stockfish_bridge.js",
+  "dependencies": {
+    "stockfish": "^18.0.8"
+  },
+  "scripts": {
+    "test:stockfish": "node stockfish_bridge.js"
+  }
+}
